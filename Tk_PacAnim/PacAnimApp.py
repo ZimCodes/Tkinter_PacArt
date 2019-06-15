@@ -23,6 +23,5 @@ class PacAnimApp():
 
     def startapp(self):
         '''Starts the Application'''
-        self.playanims()
-        self.canvas.bind('<ButtonPress>',lambda e: self.playanims)
+        self.canvas.bind('<ButtonPress>',lambda e: self.playanims())
         ttk.Label(self.master, text='Click to play!', font=('', 18, 'bold'),foreground='blue').pack()
